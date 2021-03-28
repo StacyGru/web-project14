@@ -2,15 +2,28 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ProductElementComponent } from './product-element/product-element.component';
+import { TableWorkersComponent } from './ui/table-workers/table-workers.component';
+import { AddformWorkerComponent } from './ui/addform-worker/addform-worker.component';
+import { FormsModule } from '@angular/forms';
+import { EditformWorkerComponent } from './ui/editform-worker/editform-worker.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TextMaskModule } from 'angular2-text-mask';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductElementComponent
+    TableWorkersComponent,
+    AddformWorkerComponent,
+    EditformWorkerComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    FormsModule,  
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    TextMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
