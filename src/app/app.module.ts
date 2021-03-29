@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { EditformWorkerComponent } from './ui/editform-worker/editform-worker.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TextMaskModule } from 'angular2-text-mask';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,  
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    TextMaskModule
+    TextMaskModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
